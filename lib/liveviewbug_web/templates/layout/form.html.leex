@@ -1,1 +1,4 @@
-Hello
+<%= f = form_for :bug, "#", phx_change: "changed" %>
+  <%= text_input f, :foo %>
+  <%= text_input f, :bar, value: @bar %>
+</form>
